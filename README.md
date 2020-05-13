@@ -32,3 +32,9 @@
 
 1. 보기 좋은 ui
 2. 보안 기능? (필요할까,,?)
+
+​
+
+<h2>개발 기록</h2>
+
+https://blog.naver.com/light-star
