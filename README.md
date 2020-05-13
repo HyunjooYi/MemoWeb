@@ -37,4 +37,4 @@
 
 <h2>개발 기록</h2>
 
-https://blog.naver.com/light-star
+https://blog.naver.com/light-star 의 '개인 작업' 디렉토리
