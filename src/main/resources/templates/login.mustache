@@ -1,13 +1,14 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
-<body>
-  <p>안녕</p>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="/js/app/index.js"></script>
-</body>
-</html>
+{{>layout/header}}
+  <div class="container-login">
+      <form method="post" action="/memo/login">
+          <h2>로그인</h2>
+          <p>
+              <input id="id" class="form-control" type="text" placeholder="Id"/>
+          </p>
+          <p>
+              <input id="password" class="form-control" type="password" placeholder="Password"/>
+          </p>
+          <button type="submit" class="btn btn-primary btn-block">확인</button>
+      </form>
+  </div>
+{{>layout/footer}}
