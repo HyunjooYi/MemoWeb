@@ -1,14 +1,18 @@
 {{>layout/header}}
   <div class="container-login">
-      <form method="post" action="/memo/login">
+      <form action="/memo/login" method="post">
           <h2>로그인</h2>
           <p>
-              <input id="id" class="form-control" type="text" placeholder="Id"/>
+              <input name="username" class="form-control" type="text" placeholder="Id"/>
           </p>
           <p>
-              <input id="password" class="form-control" type="password" placeholder="Password"/>
+              <input name="password" class="form-control" type="password" placeholder="Password"/>
           </p>
-          <button type="submit" class="btn btn-primary btn-block">확인</button>
+          {{#id}}
+              <p>{{id}}</p>
+          {{/id}}
+          <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+          <button id="login" type="submit" class="btn btn-primary btn-block">확인</button>
       </form>
   </div>
 {{>layout/footer}}

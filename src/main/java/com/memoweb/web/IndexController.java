@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class IndexController {
 
-    @GetMapping(value = "/")
+    @GetMapping("/")
     public String index() {
         System.out.println("index function");
         return "index";
